@@ -1,4 +1,3 @@
-# Copyright (c) 2023, Albert Gu, Tri Dao.
 import gc
 import time
 from collections import namedtuple
