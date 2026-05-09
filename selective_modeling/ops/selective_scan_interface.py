@@ -1,4 +1,3 @@
-# Copyright (c) 2023, Tri Dao, Albert Gu.
 
 import torch
 import torch.nn.functional as F
