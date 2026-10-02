@@ -40,7 +40,7 @@ class Sage(nn.Module):
             x = self.convs[i](x=(x, x_target), edge_index=edge_index)
             x = F.relu(x)
             x = F.dropout(x, training=self.training)
-        out = torch.matmul(x, self.w)
+        out = torch.matmul(x, self.w)   //
         return out
 
 
