@@ -146,7 +146,7 @@ if __name__ == '__main__':
     NUM_LAYERS = 2
     LAMBDA_CAUSAL = 0.5
     LEARNING_RATE = 0.01
-    EPOCHS_PER_SNAPSHOT = 50
+    EPOCHS_PER_SNAPSHOT = 50  //
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
