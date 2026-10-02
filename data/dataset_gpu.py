@@ -167,7 +167,7 @@ class DyDataset(Dataset):
             ret_data.affected_test_mask = affected_test_mask
             ret_data.affected_val_mask = affected_val_mask
 
-            ###############################################################################################################
+            ##############################################################################################################
             now_unique_nodes, now_inverse_indices = torch.unique(previous_current_snaps_cat_edges, return_inverse=True)
             now_reindexed_edges = now_inverse_indices.reshape(previous_current_snaps_cat_edges.shape)
             now_basic_nodes_set = torch.tensor(list(set(previous_current_snaps_cat_edges.flatten().tolist())),
