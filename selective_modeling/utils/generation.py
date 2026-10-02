@@ -141,7 +141,7 @@ def decode(
     We assume that all sequences in the same batch have the same length.
 
     Arguments:
-        input_ids: (batch, seq_len)
+        input_ids: (batch, seq_len)  //
         max_length: int
         teacher_outputs (optional): (batch, seq_len). If provided, instead of sampling from the
             logits, the next token is taken from the teacher_outputs. Useful for testing.
