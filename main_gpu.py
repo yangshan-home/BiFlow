@@ -45,7 +45,7 @@ class SparseEnvAnchorMemory(nn.Module):
             self.gate_z.weight.copy_(eye)
             self.out_proj.weight.zero_()
             self.out_proj.weight[:, :self.hidden_dim].copy_(0.5 * eye)
-            self.out_proj.weight[:, self.hidden_dim:].copy_(0.5 * eye)
+            self.out_proj.weight[:, self.hidden_dim:].copy_(0.5 * eye)  //
 
     def forward(self, env_node_repr, prev_state=None, topk=None):
         # env_node_repr: [num_env_nodes, hidden_dim]
