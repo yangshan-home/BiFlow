@@ -43,7 +43,7 @@ Each dataset should be placed under `data/<dataset_name>/` and include:
 - `attributes`: node feature matrix
 - `labels`: node ids and labels
 - `train_nodes`, `val_nodes`, `test_nodes`
-- `stream_edges/`: one file per snapshot (`0`, `1`, `2`, ...)
+- `stream_edges/`: one file per snapshot (`0`, `1`, `2`, ......)
 
 Existing example in this repository: `data/highSchool/`.
 
