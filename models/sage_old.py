@@ -150,7 +150,7 @@ class SAGEConv(MessagePassing):
             out = old_out
 
         if self.normalize:
-            out = F.normalize(out, p=2., dim=-1)
+            out = F.normalize(out, p=2., dim=-1)  //
 
         return out, old_out, new_out
 
